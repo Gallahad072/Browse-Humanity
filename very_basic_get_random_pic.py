@@ -2,6 +2,7 @@ import webbrowser
 import random
 import string
 
+# This is a very primitve version of getting random images
 
 def prnt():
     text = "".join(random.choices(string.ascii_lowercase, k=2))
@@ -18,4 +19,4 @@ def imgur():
 
 for i in range(10):
     prnt()
-    # imgur()
+    imgur()
