@@ -1,3 +1,5 @@
+# Python 3.9.7
+
 import webbrowser
 import random
 import string
