@@ -46,3 +46,6 @@ This will open random images from imgur in your browser
             getImages(int(inpt))
         else:
             print("\n    ERROR: Enter a valid value\n")
+
+
+main()
