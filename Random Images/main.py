@@ -1,5 +1,3 @@
-# Python 3.9.7
-
 import webbrowser
 import random
 import string
@@ -8,18 +6,13 @@ import requests
 from io import BytesIO
 
 
-def getUrls(reps):
-    urls = set()
-    for i in range(reps):
-        text = "".join(random.choices(string.ascii_letters + string.digits, k=5))
-        urls.add(f"https://www.imgur.com/{text}.png")
-    return urls
-
-
-def getValidUrls(urls):
+def getImages(number_of_images):
     valid_urls = set()
 
-    for url in urls:
+    while len(valid_urls) != number_of_images:
+        text = "".join(random.choices(string.ascii_letters + string.digits, k=5))
+        url = f"https://www.imgur.com/{text}.png"
+
         response = requests.get(url)
         img = Image.open(BytesIO(response.content))
         not_found = Image.open("404.png")
@@ -29,18 +22,13 @@ def getValidUrls(urls):
         else:
             valid_urls.add(url)
 
-    return valid_urls
-
-
-def openImages(reps):
-    urls = getUrls(reps)
-    valid_urls = getValidUrls(urls)
     for url in valid_urls:
         webbrowser.open_new(url)
 
 
-print(
-    """
+def main():
+    print(
+        """
 Welcome to another fun waste of time.
 
 This will open random images from imgur in your browser
@@ -49,12 +37,12 @@ This will open random images from imgur in your browser
 
 'q' to quit
 """
-)
-while True:
-    reps = input("Number of urls to search: ")
-    if reps == "q":
-        break
-    if reps.isdigit():
-        openImages(int(reps))
-    else:
-        print("\n    ERROR: Enter a valid value\n")
+    )
+    while True:
+        inpt = input("Number of random images: ")
+        if inpt == "q":
+            break
+        if inpt.isdigit():
+            getImages(int(inpt))
+        else:
+            print("\n    ERROR: Enter a valid value\n")

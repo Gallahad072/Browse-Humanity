@@ -4,6 +4,9 @@ import string
 
 # This is a very primitve version of getting random images
 
+#  gets random lightshot pics
+
+
 def prnt():
     text = "".join(random.choices(string.ascii_lowercase, k=2))
     ints = random.randint(0, 10000)
@@ -11,12 +14,5 @@ def prnt():
     webbrowser.open(url)
 
 
-def imgur():
-    text = "".join(random.choices(string.ascii_letters + string.digits, k=5))
-    url = f"www.imgur.com/{text}"
-    webbrowser.open(url)
-
-
 for i in range(10):
     prnt()
-    imgur()
