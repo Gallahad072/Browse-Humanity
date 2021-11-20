@@ -1,25 +1,18 @@
 import webbrowser
 import random
 import string
-from PIL import Image
 import requests
+from PIL import Image
 from io import BytesIO
 
 
 def getImages(number_of_images):
     valid_urls = set()
-
     while len(valid_urls) != number_of_images:
         text = "".join(random.choices(string.ascii_letters + string.digits, k=5))
         url = f"https://www.imgur.com/{text}.png"
-
-        response = requests.get(url)
-        img = Image.open(BytesIO(response.content))
-        not_found = Image.open("404.png")
-
-        if img == not_found:
-            continue
-        else:
+        img = Image.open(BytesIO(requests.get(url).content))
+        if (img.width and img.height) > 100:
             valid_urls.add(url)
 
     for url in valid_urls:
@@ -48,4 +41,5 @@ This will open random images from imgur in your browser
             print("\n    ERROR: Enter a valid value\n")
 
 
-main()
+if __name__ == "__main__":
+    main()
