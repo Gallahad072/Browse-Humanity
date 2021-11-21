@@ -23,10 +23,10 @@ The UI will then prompt an input.
 ```
 'q' to quit
 
- Number of random images: 20
+ Number of random images: number_of_images
 ```
 
-Replace '20' with however many images you want.
+> Pass in the number of images wanted as a variable.
 
 ---
 
@@ -34,26 +34,24 @@ Replace '20' with however many images you want.
 
 Type in the terminal:
 
-`python main.py 20`
+`python rand_img_gen.py number_of_images`
 
-Replace '20' with however many images you want
+> Pass in the number of images wanted as a variable.
 
 ## Import
 
 On importing this as a module, one could either run:
 
-`main()`
+`main(number_of_images)`
 
-> This will open the ui
-
-`getVariableList(number_of_images)`
-
-> This will return a list of valid urls to open.
+> Finds and opens images with loading bar.
 >
 > Pass in the number of images wanted as a variable.
 
-`getImages(number_of_images)`
+`ui()`
 
->This will open the images in your browser.
->
->Pass in the number of images wanted as a variable.
+> This will run the main program with a ui to input number of images
+
+`getValidUrl()`
+
+> This will return a valid url (one that contains an image of a sensible size).
