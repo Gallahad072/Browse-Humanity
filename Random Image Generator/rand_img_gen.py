@@ -57,7 +57,7 @@ def ui():
     while True:
         inpt = input("Number of random images: ")
         if inpt == "q":
-            break
+            return
         if inpt.isdigit():
             main(int(inpt))
         else:
