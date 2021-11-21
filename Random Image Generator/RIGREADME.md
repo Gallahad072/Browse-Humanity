@@ -16,7 +16,7 @@ You can use it two ways:
 
 Type in the terminal:
 
-`python main.py`
+`python rand_img_gen.py`
 
 The UI will then prompt an input.
 
@@ -37,3 +37,23 @@ Type in the terminal:
 `python main.py 20`
 
 Replace '20' with however many images you want
+
+## Import
+
+On importing this as a module, one could either run:
+
+`main()`
+
+> This will open the ui
+
+`getVariableList(number_of_images)`
+
+> This will return a list of valid urls to open.
+>
+> Pass in the number of images wanted as a variable.
+
+`getImages(number_of_images)`
+
+>This will open the images in your browser.
+>
+>Pass in the number of images wanted as a variable.
