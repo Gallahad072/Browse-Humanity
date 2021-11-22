@@ -1,6 +1,6 @@
 # BrowseHumanity
 
-Programs that generate random content from all corners of the internet
+Programs that generate random content from all corners of the internet.
 
 Made for my own entertainment, now it's time to share!
 
