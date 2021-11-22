@@ -2,7 +2,7 @@
 
 Welcome to another fun waste of time.
 
-This [program](main.py) will open random images from imgur in your browser.
+This [program](imgur_browser.py) will open random images from imgur in your browser.
 
 **_!!! WARNING: Images may be NSFW, must be 18+ !!!_**
 
