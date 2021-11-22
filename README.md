@@ -1,6 +1,8 @@
-# Automation
+# BrowseHumanity
 
-Programs that automate random tasks for fun
+Programs that generate random content from all corners of the internet
+
+Made for my own entertainment, now it's time to share!
 
 ## Programs
 
