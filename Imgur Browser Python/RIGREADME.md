@@ -1,4 +1,4 @@
-# Random Image Generator
+# Imgur Browser
 
 Welcome to another fun waste of time.
 
@@ -16,7 +16,7 @@ You can use it two ways:
 
 Type in the terminal:
 
-`python rand_img_gen.py`
+`python imgur_browser.py`
 
 The UI will then prompt an input.
 
@@ -34,7 +34,7 @@ The UI will then prompt an input.
 
 Type in the terminal:
 
-`python rand_img_gen.py number_of_images`
+`python imgur_browser.py number_of_images`
 
 > Pass in the number of images wanted as a variable.
 
