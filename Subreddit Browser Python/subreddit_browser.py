@@ -1,10 +1,11 @@
 import sys
+import curses
 import webbrowser
 import urllib.request
 
 
 # Opens random subreddits
-def main(number_of_subreddits, nsfw=False):
+def loadSubreddits(stdscr, number_of_subreddits, nsfw):
     urls = set()
     url_end = "randnsfw" if nsfw else "random"
     url = "https://www.reddit.com/r/" + url_end
@@ -15,9 +16,30 @@ def main(number_of_subreddits, nsfw=False):
         except urllib.error.HTTPError:
             continue
         urls.add(resp.url)
+        points = "#" * round(len(urls) / number_of_subreddits * 50)
+        stdscr.addstr(1, 0, f"{points}", curses.color_pair(1))
+        stdscr.addstr(2, 0, f"{len(urls)}/{number_of_subreddits}")
+        stdscr.refresh()
 
     for url in urls:
         webbrowser.open(url)
+
+
+# Initializes loading screen
+def loading_screen(stdscr, number_of_subreddits, nsfw):
+    curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_GREEN)
+    curses.init_pair(2, curses.COLOR_RED, curses.COLOR_BLACK)
+    stdscr.clear()
+    stdscr.addstr("Loading Subreddits ...\n")
+    stdscr.addstr("#" * 50, curses.color_pair(2))
+    stdscr.addstr(f"\n0/{number_of_subreddits}")
+    stdscr.refresh()
+    loadSubreddits(stdscr, number_of_subreddits, nsfw)
+
+
+# Finds and opens subreddits with loading bar
+def main(number_of_subreddits, nsfw=False):
+    curses.wrapper(loading_screen, number_of_subreddits, nsfw)
 
 
 # ui to receive input in the console
