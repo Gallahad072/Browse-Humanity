@@ -8,7 +8,7 @@ Made for my own entertainment, now it's time to share!
 
 - **[Imgur Browser Python](Imgur%20Browser%20Python/IBP_README.md)**
 
-This [program](Imgur%20Browser%20Python/imgur_browser.py) will open random images from imgur in your browser.
+  This [program](Imgur%20Browser%20Python/imgur_browser.py) will open random images from imgur in your browser.
 
 - **[Subreddit Browser Python](Subreddit%20Browser%20Python/SBP_README.md)**
 
