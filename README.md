@@ -1,10 +1,8 @@
-# BrowseHumanity
+# Browse Humanity
 
-Programs that generate random content from all corners of the internet.
+Python programs that display random content from the internet.
 
 Made for my own entertainment, now it's time to share!
-
-Using Python.
 
 ## Programs
 
