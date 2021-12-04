@@ -254,7 +254,7 @@ def ui():
             else:
                 main(int(inpt))
         else:
-            print("\n\TypeError: Value not digit\n")
+            print("\nTypeError: Value not digit")
 
 
 if __name__ == "__main__":
