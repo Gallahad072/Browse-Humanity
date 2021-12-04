@@ -1,10 +1,8 @@
 import requests
-import random
 import time
 import webbrowser
 import random
 import sys
-import requests
 import curses
 
 # List of 4chan boards, and dict to act as a cache for already looked up board catalogs
