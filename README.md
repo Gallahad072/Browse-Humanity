@@ -4,12 +4,18 @@ Programs that generate random content from all corners of the internet.
 
 Made for my own entertainment, now it's time to share!
 
+Using Python.
+
 ## Programs
 
-- **[Imgur Browser Python](Imgur%20Browser%20Python/README.md)**
+- **[Imgur Browser](Imgur%20Browser/README.md)**
 
-  This [program](Imgur%20Browser%20Python/imgur_browser.py) will open random images from imgur in your browser.
+  This [program](Imgur%20Browser/imgur_browser.py) will open random images from imgur in your browser.
 
-- **[Subreddit Browser Python](Subreddit%20Browser%20Python/README.md)**
+- **[Subreddit Browser](Subreddit%20Browser/README.md)**
 
-  This [program](Subreddit%20Browser%20Python/subreddit_browser.py) will open random subreddits in your browser.
+  This [program](Subreddit%20Browser/subreddit_browser.py) will open random subreddits in your browser.
+
+- **[4chan Browser](4chan%20Browser/README.md)**
+
+  This [program](4chan%20Browser/subreddit_browser.py) will open random 4chan images in your browser.
