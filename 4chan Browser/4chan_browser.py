@@ -199,11 +199,11 @@ def getUrlAndThread(nsfw):
 
 # functions that finds and open images with loading bar
 def loadImages(stdscr, number_of_images, nsfw):
-    urls = set()
+    urls = list()
     threads = list()
     for i in range(number_of_images):
         imageurl, thread = getUrlAndThread(nsfw)
-        urls.add(imageurl)
+        urls.append(imageurl)
         threads.append(thread)
         points = "#" * round(len(urls) / number_of_images * 50)
         stdscr.addstr(1, 0, f"{points}", curses.color_pair(1))
