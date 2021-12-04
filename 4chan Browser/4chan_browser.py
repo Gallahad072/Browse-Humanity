@@ -175,7 +175,7 @@ def getUrlAndThread(nsfw):
         data = cache[board]
     else:
         data = (requests.get("http://a.4cdn.org/" + board + "/catalog.json")).json()
-        time.sleep(1)
+        time.sleep(1)  # DO NOT REMOVE SLEEPS DUE TO API RULES
         cache[board] = data
 
     threadnums = list()
@@ -188,7 +188,7 @@ def getUrlAndThread(nsfw):
     pd = (
         requests.get("http://a.4cdn.org/" + board + "/thread/" + str(thread) + ".json")
     ).json()
-    time.sleep(1)
+    time.sleep(1)  # DO NOT REMOVE SLEEPS DUE TO API RULES
     for post in pd["posts"]:
         try:
             imgs.append(str(post["tim"]) + str(post["ext"]))
