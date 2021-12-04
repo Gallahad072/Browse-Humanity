@@ -63,7 +63,6 @@ sfw_boards = [
 ]
 nsfw_boards = [
     "r",
-    "f",
     "i",
     "ic",
     "wg",
@@ -141,7 +140,6 @@ boards = [
     "news",
     "wsr",
     "r",
-    "f",
     "i",
     "ic",
     "wg",
