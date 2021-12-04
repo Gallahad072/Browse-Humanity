@@ -18,4 +18,4 @@ Using Python.
 
 - **[4chan Browser](4chan%20Browser/README.md)**
 
-  This [program](4chan%20Browser/subreddit_browser.py) will open random 4chan images in your browser.
+  This [program](4chan%20Browser/4chan_browser.py) will open random 4chan images in your browser.

@@ -1,4 +1,4 @@
-# Imgur Browser Python
+# Imgur Browser
 
 Welcome to another fun waste of time.
 

@@ -1,4 +1,4 @@
-# Subreddit Browser Python
+# Subreddit Browser
 
 Welcome to another fun waste of time.
 

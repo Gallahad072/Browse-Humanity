@@ -1,4 +1,4 @@
-# 4chan Browser Python
+# 4chan Browser
 
 Welcome to another fun waste of time.
 
