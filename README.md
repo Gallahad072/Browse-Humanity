@@ -6,14 +6,14 @@ Made for my own entertainment, now it's time to share!
 
 ## Programs
 
-- **[Imgur Browser](Imgur%20Browser/README.md)**
+- **[Imgur Browser](Imgur-Browser/README.md)**
 
-  This [program](Imgur%20Browser/imgur_browser.py) will open random images from imgur in your browser.
+  This [program](Imgur-Browser/imgur_browser.py) will open random images from imgur in your browser.
 
-- **[Subreddit Browser](Subreddit%20Browser/README.md)**
+- **[Subreddit Browser](Subreddit-Browser/README.md)**
 
-  This [program](Subreddit%20Browser/subreddit_browser.py) will open random subreddits in your browser.
+  This [program](Subreddit-Browser/subreddit_browser.py) will open random subreddits in your browser.
 
-- **[4chan Browser](4chan%20Browser/README.md)**
+- **[4chan Browser](4chan-Browser/README.md)**
 
-  This [program](4chan%20Browser/4chan_browser.py) will open random 4chan images in your browser.
+  This [program](4chan-Browser/4chan_browser.py) will open random 4chan images in your browser.
