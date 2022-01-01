@@ -61,7 +61,7 @@ sfw_boards = [
     "news",
     "wsr",
 ]
-nsfw_boards = [
+all_nsfw_boards = [
     "r",
     "i",
     "ic",
@@ -84,6 +84,15 @@ nsfw_boards = [
     "hr",
     "gif",
     "aco",
+]
+nsfw_boards = [
+    "b",
+    "soc",
+    "s",
+    "hc",
+    "t",
+    "gif",
+    "r",
 ]
 boards = [
     "a",
