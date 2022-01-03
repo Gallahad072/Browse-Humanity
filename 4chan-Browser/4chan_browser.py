@@ -265,11 +265,18 @@ def ui():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
+    if len(sys.argv) == 2:
         inpt = sys.argv[1]
         if inpt.isdigit():
             main(int(inpt))
         else:
             print("\n\TypeError: Value not digit\n")
+    if len(sys.argv) == 3:
+        inpt = sys.argv[1]
+        nsfw = sys.argv[2]
+        if inpt.isdigit():
+            main(int(inpt), nsfw)
+        else:
+            print("\nFormat: python <program name> <number of images> <nsfw>\n")
     else:
         ui()
