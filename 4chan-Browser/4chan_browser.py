@@ -274,8 +274,8 @@ if __name__ == "__main__":
     if len(sys.argv) == 3:
         inpt = sys.argv[1]
         nsfw = sys.argv[2]
-        if inpt.isdigit():
-            main(int(inpt), nsfw)
+        if inpt.isdigit() and nsfw.isdigit():
+            main(int(inpt), int(nsfw))
         else:
             print("\nFormat: python <program name> <number of images> <nsfw>\n")
     else:

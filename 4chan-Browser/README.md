@@ -31,13 +31,15 @@ The UI will then prompt an input.
 
 ---
 
-**Put the number of images you want to open as an argument in your terminal**
+**Pin arguments in terminal**
 
 Type in the terminal:
 
-`python 4chan_browser.py number_of_images`
+`python 4chan_browser.py <number_of_images> <nsfw>`
 
 > Pass in the number of images wanted as a variable.
+
+> If nsfw required pass in 1 else 0 or leave blank
 
 ## Functions
 
