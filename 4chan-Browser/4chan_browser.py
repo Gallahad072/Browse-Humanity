@@ -200,10 +200,13 @@ def getUrlAndThread(nsfw):
         except KeyError:
             pass
 
-    image = random.choice(imgs)
-    imageurl = "https://i.4cdn.org/" + board + "/" + image
-    thread = "https://boards.4chan.org/" + board + "/thread/" + str(thread)
-    return imageurl, thread
+    if imgs == list():
+        return getUrlAndThread(nsfw)
+    else:
+        image = random.choice(imgs)
+        imageurl = "https://i.4cdn.org/" + board + "/" + image
+        thread = "https://boards.4chan.org/" + board + "/thread/" + str(thread)
+        return imageurl, thread
 
 
 # functions that finds and open images with loading bar
